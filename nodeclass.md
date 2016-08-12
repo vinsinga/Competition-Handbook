@@ -51,4 +51,20 @@
     }
 # Usage of Node Class
 ## Java
+    public someFunction(var args) {
+      // Create the first node.
+      Node n1 = new Node();
+      // Create a second node.
+      Node n2 = new Node();
+      // Link the two nodes so n1 triggers n2.
+      n1.addNode(n2);
+      // Fire the tree.
+      n1.fire();
+      // Check the values of each node.
+      System.out.println("Node 1: " + n1.value);
+      System.out.println("Node 2: " + n2.value);
+    }
+The above code should output the following:
 
+    Node 1: 1
+    Node 2: 1
