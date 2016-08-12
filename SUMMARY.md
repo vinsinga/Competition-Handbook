@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](introduction.md)
-* NodeClass
+* [NodeClass](nodeclass.md)
 
