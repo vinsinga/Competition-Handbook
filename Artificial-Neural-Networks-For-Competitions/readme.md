@@ -1,5 +1,5 @@
 # Node Class
-## Java
+## Java - Detailed
     // Defines a node object that can be used to build a compute neural net.
     class Node {
       // Stores how many times the network has been triggered.
@@ -27,5 +27,23 @@
       pubilc addOutput(Node n) {
         // Add argument to the initialized Vector struct.
         _connectedNodes.addElement(n);
+      }
+    }
+## Java - Minified
+    class Node {
+      public v;
+      private Vector cn;
+      public Node() {
+        v = 0;
+        cn = new Vector();
+      }
+      public fire() {
+        v++;
+        foreach(Node n in cn) {
+          n.fire();
+        }
+      }
+      pubilc addNode(Node n) {
+        cn.addElement(n);
       }
     }
