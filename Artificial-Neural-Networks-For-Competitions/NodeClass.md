@@ -3,7 +3,7 @@
     // Defines a node object that can be used to build a compute neural net.
     class Node {
       // Stores how many times the network has been triggered.
-      public value;
+      public int value;
       // Stores pointers to other nodes that should be fired when this node is fired.
       private Vector _connectedNodes;
       
@@ -31,7 +31,7 @@
     }
 ## Java - Minified
     class Node {
-      public v;
+      public int v;
       private Vector cn;
       public Node() {
         v = 0;
