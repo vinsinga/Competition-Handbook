@@ -4,7 +4,8 @@
     class Node {
       // Stores how many times the network has been triggered.
       public int value;
-      // Stores pointers to other nodes that should be fired when this node is fired.
+      // Stores pointers to other nodes that should be fired when this
+      // node is fired.
       private Vector _connectedNodes;
       
       // Default constructor.
@@ -14,7 +15,8 @@
         // Initialize the vector struct.
         _connectedNodes = new Vector();
       }
-      // Fires the node by incrementing the value struct and triggering all connected Node objects.
+      // Fires the node by incrementing the value struct and
+      // triggering all connected Node objects.
       public fire() {
         // Increment the value variable.
         value++;
