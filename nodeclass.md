@@ -47,3 +47,6 @@
         cn.addElement(n);
       }
     }
+# Usage of Node Class
+## Java
+
