@@ -11,6 +11,24 @@ struct Circle {
 }
 ```
 
+### Line
+
+```
+struct Line {
+    Vector2D origin;
+    Vector2D extent;
+}
+```
+
+### Square
+
+```
+struct Square {
+    Vector2D origin;
+    Vector2D extent;
+}
+```
+
 ### Vector2D
 
 ```
@@ -60,7 +78,9 @@ static bool circleIntersection(Circle c, Vector2D v) {
 #### Square
 
 ```
-// TODO: insert point-in-square intersection function.
+static bool squareIntersection(Square s, Vector2D v) {
+    return s.origin.x >= v.x && s.origin.y >= v.y && v.x <= s.extent.x && v.y <= s.extent.y;
+}
 ```
 
 #### Line
