@@ -54,14 +54,24 @@ struct Vector3D {
 
 #### Doubles
 ```
-static double distance(double x1, double y1, double x2, double y2){
+static double distance(double x1, double y1, double x2, double y2) {
     return Math.hypot(x2 - x1, y2 - y1);
 }
 ```
 #### Vector2D
 ```
-static double distance(Vector2D v1, Vector2D v2){
+static double distance(Vector2D v1, Vector2D v2) {
     return Math.hypot(v2.x - v1.x, v2.y - v1.y);
+}
+```
+
+### Midpoint
+
+```
+static Vector2D midpoint(Vector2D v1, Vector2D v2) {
+    double x = (v1.x + v2.x) / 2;
+    double y = (v1.y + v2.y) / 2;
+    return new Point(x, y);
 }
 ```
 
