@@ -99,3 +99,8 @@ static bool squareIntersection(Square s, Vector2 v) {
 // TODO: insert point-on-line intersection function.
 ```
 
+## Terminology
+
+**Vector**: A two dimensional matrix of varible length.
+
+**Matrix**: A multi-dimensional array of vectors (usually two-dimensional).
