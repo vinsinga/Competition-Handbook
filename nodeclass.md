@@ -57,7 +57,7 @@ To shorten the code, the `addOutput(Node)` function has been removed. To add a n
 
 # Usage of Node Class
 
-## Java
+## 1:1 Storage Model
 
 ```
 public someFunction(var args) {
@@ -71,15 +71,48 @@ public someFunction(var args) {
   n1.fire();
   // Since this network map is not event-based, function will only return once the entire tree has fired.
   // Check the values of each node.
-  System.out.println("Node 1: " + n1.value);
-  System.out.println("Node 2: " + n2.value);
+  System.out.println("Node 1:\t" + n1.value);
+  System.out.println("Node 2:\t" + n2.value);
 }
 ```
 
 The above code should output the following:
 
 ```
-Node 1: 1
-Node 2: 1
+Node 1:    1
+Node 2:    1
 ```
 
+## ArrayList<> Storage Model
+
+```
+public someFunction(var args) {
+    // Create the first node.
+    Node n1 = new Node();
+    // Create a ArrayList<Node> object.
+    ArrayList<Node> nodeList = new ArrayList();
+    // Add the node to the list.
+    nodeList.addElement(n1);
+    // Create 9 nodes and link them together.
+    for(int i = 0; i <= 9; i++) {
+        Node n = new Node();
+        n.cn.addElement(nodeList[i]);
+        nodeList.addElement(n);
+    }
+    // Fire the tree twice.
+    n1.fire();
+    n1.fire();
+    // Since this network map is not event-based, function will only return once
+    the entire tree has fired.
+    // Check the values of each node.
+    System.out.println("Node 1:\t" + nodeList[0].value);
+    System.out.println("Node 10:\t" + nodeList[9].value);
+}
+```
+
+The above code should output the following:
+
+```
+Node 1:    2
+Node 10:   2
+```
