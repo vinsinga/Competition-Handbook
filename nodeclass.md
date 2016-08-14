@@ -9,14 +9,14 @@ class Node {
   public int value;
   // Stores pointers to other nodes that should be fired when this
   // node is fired.
-  private Vector _connectedNodes;
+  private ArrayList<Node> _connectedNodes;
 
   // Default constructor.
   public Node() {
     // Initialize the int variable value.
     value = 0;
     // Initialize the vector struct.
-    _connectedNodes = new Vector();
+    _connectedNodes = new ArrayList();
   }
   // Fires the node by incrementing the value struct and
   // triggering all connected Node objects.
@@ -41,9 +41,9 @@ class Node {
 ```
 class Node {
   public int v = 0;
-  public Vector cn;
+  public ArrayList<Node> cn;
   public Node() {
-    cn = new Vector();
+    cn = new ArrayList();
   }
   public fire() {
     v++;
