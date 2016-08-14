@@ -51,9 +51,9 @@ class Node {
       n.fire();
     }
   }
-  // To add an output node, use node1.cn.addElement(node2);
 }
 ```
+To shorten the code, the `addOutput(Node)` function has been removed. To add a node to the list of reciever nodes, use `node1.cn.addElement(node2);` within your program.
 
 # Usage of Node Class
 
