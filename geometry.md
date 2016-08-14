@@ -6,7 +6,7 @@
 
 ```
 struct Circle {
-    Vector2D origin;
+    Vector2 origin;
     double radius;
 }
 ```
@@ -15,8 +15,8 @@ struct Circle {
 
 ```
 struct Line {
-    Vector2D origin;
-    Vector2D extent;
+    Vector2 origin;
+    Vector2 extent;
 }
 ```
 
@@ -24,24 +24,24 @@ struct Line {
 
 ```
 struct Square {
-    Vector2D origin;
-    Vector2D extent;
+    Vector2 origin;
+    Vector2 extent;
 }
 ```
 
-### Vector2D
+### Vector2
 
 ```
-struct Vector2D {
+struct Vector2 {
     double x;
     double y;
 }
 ```
 
-### Vector3D
+### Vector3
 
 ```
-struct Vector3D {
+struct Vector3 {
     double x;
     double y;
     double z;
@@ -58,9 +58,9 @@ static double distance(double x1, double y1, double x2, double y2) {
     return Math.hypot(x2 - x1, y2 - y1);
 }
 ```
-#### Vector2D
+#### Vector2
 ```
-static double distance(Vector2D v1, Vector2D v2) {
+static double distance(Vector2 v1, Vector2 v2) {
     return Math.hypot(v2.x - v1.x, v2.y - v1.y);
 }
 ```
@@ -68,10 +68,10 @@ static double distance(Vector2D v1, Vector2D v2) {
 ### Midpoint
 
 ```
-static Vector2D midpoint(Vector2D v1, Vector2D v2) {
+static Vector2 midpoint(Vector2 v1, Vector2 v2) {
     double x = (v1.x + v2.x) / 2;
     double y = (v1.y + v2.y) / 2;
-    return new Point(x, y);
+    return new Vector2(x, y);
 }
 ```
 
@@ -80,7 +80,7 @@ static Vector2D midpoint(Vector2D v1, Vector2D v2) {
 #### Circle
 
 ```
-static bool circleIntersection(Circle c, Vector2D v) {
+static bool circleIntersection(Circle c, Vector2 v) {
     return distance(v, c.origin) <= c.radius;
 }
 ```
@@ -88,7 +88,7 @@ static bool circleIntersection(Circle c, Vector2D v) {
 #### Square
 
 ```
-static bool squareIntersection(Square s, Vector2D v) {
+static bool squareIntersection(Square s, Vector2 v) {
     return s.origin.x >= v.x && s.origin.y >= v.y && v.x <= s.extent.x && v.y <= s.extent.y;
 }
 ```
