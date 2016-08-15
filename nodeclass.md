@@ -117,3 +117,14 @@ The above code should output the following:
 Node 1:    2
 Node 10:   2
 ```
+
+## Search Patterns
+### Breadth-First Search
+To perform a breadth-first search, create a downward-facing fan with a single node at the top. Fire the top node then check the result by looking at the value of the nodes at the bottom.
+
+This method is useful for problems that require analyzing the effect of one action on multiple variables.
+
+### Depth-First Search
+Unlike breadth-first, a depth-first search tree is an upward facing fan with several nodes at the top and one on the bottom. To run, fire some or all of the top nodes and look at the bottom node for the result.
+
+This method works best on ANNs that are adapted for dynamic-fire weight (having a pulse value other than 1). Depth-First trees are best for problems that involve looking at the effect of multiple different input values to obtain a single value. This is similar to the function of actual ML neural networks.
