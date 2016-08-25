@@ -11,7 +11,7 @@ One important thing to note about the implementation code in the **NodeClass** c
 
 ``` Java
 // Create objects
-int someObject = 0;
+SomeObject someObject = new SomeObject();
 ArrayList<SomeObject> arrayList = new ArrayList();
 
 // COPY pointer of object to array.
@@ -19,7 +19,7 @@ arrayList.addElement(someObject);
 
 // Both of these commands do the same thing
 // to the same object in memory.
-System.out.println(someObject.doStuff();
+someObject.doStuff();
 arrayList[0].doStuff();
 ```
 
