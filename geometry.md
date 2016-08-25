@@ -1,6 +1,7 @@
 # Geometry
 
 ## Object Declarations
+**If supported by the language, replace `class` with `struct` to reduce memory usage.**
 
 ### Circle
 
