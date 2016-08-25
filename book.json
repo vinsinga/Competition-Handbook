@@ -1,9 +1,5 @@
 {
     "pdf": {
         "fontSize": 8
-    },
-    "plugins": [
-        "pygments"
-    ],
-    "pluginsConfig": {}
+    }
 }
