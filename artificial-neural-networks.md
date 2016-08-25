@@ -24,3 +24,4 @@ arrayList[0].doStuff();
 ```
 
 A critical thing to note is that this works only on object classes. C++ struct-style declaration objects and native data types such as `int`, and `boolean` do not follow this pattern.
+
