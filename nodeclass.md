@@ -2,7 +2,7 @@
 
 ## Detailed Class Declaration
 
-```
+``` Java
 // Defines a node object that can be used to build a compute neural net.
 class Node {
     // Stores how many times the network has been triggered.
@@ -38,7 +38,7 @@ class Node {
 
 ## Minified Class Declaration
 
-```
+``` Java
 class Node {
     public int v = 0;
     public ArrayList<Node> cn;
@@ -59,7 +59,7 @@ To shorten the code, the `addOutput(Node)` function has been removed. To add a n
 
 ## 1:1 Storage Model
 
-```
+``` Java
 public someFunction(var args) {
     // Create the first node.
     Node n1 = new Node();
@@ -86,7 +86,7 @@ Node 2:    1
 
 ## ArrayList<> Storage Model
 
-```
+``` Java
 public someFunction(var args) {
     // Create the first node.
     Node n1 = new Node();
