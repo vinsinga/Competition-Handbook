@@ -11,6 +11,7 @@ Python:
 n_list = [1,2,3,4]
 permutes = itertools.permutations(n_list)
 ```
+*Modified from *`diso-ml`* by ARMmaster17 on GitHub*
 
 Java:
 ``` Java
@@ -64,6 +65,7 @@ for permutation in itertools.permutations(n_list):
     sum.append(max(colors))
 # for [x,y] in sums[], min(y) is the smallest c with configuration x.
 ```
+*Modified from *`diso-ml`* by ARMmaster17 on GitHub*
 
 Java:
 ``` Java
