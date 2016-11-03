@@ -1,5 +1,9 @@
 {
     "pdf": {
         "fontSize": 8
-    }
+    },
+    "plugins": [
+        "mathjax"
+    ],
+    "pluginsConfig": {}
 }
