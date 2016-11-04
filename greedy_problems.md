@@ -6,12 +6,14 @@ Graph $$G$$ is composed of two arrays/lists $$V,E$$. $$G$$ is formally denoted a
 ### 2. Permutate $$V$$
 Since no algebraic formula exists for solving coloring/matching problems, we must brute force all possible inputs of $$V$$. The method for this varies by language.
 
+As a warning, this method will generate $$|V|!$$ entries into the resulting list object. Not only is this a very large object to store in memory, but it can also cost CPU/IO time if SWAP or PageFile memory must be used after exhausting all available RAM. $$O(g)$$ and data structure size calculations are recommended on all input domains before running.
+
 Python:
 ``` Python
 n_list = [1,2,3,4]
 permutes = itertools.permutations(n_list)
 ```
-*Modified from *`diso-ml`* by ARMmaster17 on GitHub*
+*Modified from https://github.com/ARMmaster17/disco-ml/*
 
 Java:
 ``` Java
@@ -36,6 +38,9 @@ public List<List<E>> generatePerm(List<E> original) {
    return returnValue;
 }
 ```
+
+**This method is recursive. Entered code should be compared thoroughly before running.**
+
 *Modified from http://stackoverflow.com/questions/10305153/generating-all-possible-permutations-of-a-list-recursively*
 
 ### Iterate and Solve
@@ -65,7 +70,7 @@ for permutation in itertools.permutations(n_list):
     sum.append(max(colors))
 # for [x,y] in sums[], min(y) is the smallest c with configuration x.
 ```
-*Modified from *`diso-ml`* by ARMmaster17 on GitHub*
+*Modified from https://github.com/ARMmaster17/disco-ml/*
 
 Java:
 ``` Java
