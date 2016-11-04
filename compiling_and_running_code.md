@@ -35,3 +35,11 @@ mcs ./filename.cs
 mono filename.exe
 ```
 ***Although the Roslyn compiler outputs a Windows executable, it can also run on Linux systems with the `mono` command.***
+
+# Other useful commands
+### File permissions
+If you get a permission denied error while executing a program, run the following to give all users permission to execute, read and write to the file.
+
+``` Bash
+chmod 777 ./filename
+```
