@@ -3,25 +3,8 @@
         "fontSize": 8
     },
     "plugins": [
-        "mathjax",
-        "autocover"
+        "mathjax"
     ],
-    "title": "ICPC Team Handbook",
-    "author": "Avidano|Insinga|Zenn",
     "pluginsConfig": {
-      "autocover": {
-            "font": {
-                "size": 28,
-                "family": "Impact",
-                "color": "#FFF"
-            },
-            "size": {
-                "w": 1800,
-                "h": 2360
-            },
-            "background": {
-                "color": "#09F"
-            }
-        }
     }
 }
