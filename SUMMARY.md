@@ -7,6 +7,6 @@
 * [Greedy Problems](greedy_problems.md)
 * [Language Documentation Extracts](language_documentation_extracts.md)
 * [Codefile Templates](codefile_templates.md)
-* [TODO](todo.md)
 * [Compiling and Running Code](compiling_and_running_code.md)
+* [TODO](todo.md)
 
