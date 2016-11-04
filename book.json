@@ -8,5 +8,20 @@
     ],
     "title": "ICPC Team Handbook",
     "author": "Collin Avidano | Vincent Insinga | Joshua Zenn",
-    "pluginsConfig": {}
+    "pluginsConfig": {
+      "autocover": {
+            "font": {
+                "size": 28,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
+        }
+    }
 }
