@@ -6,4 +6,4 @@
 - ~~Code barebones templates (C++/Java/Python)~~
 - Problem rating system specifications
 - ~~Greedy problem solving cheat sheet~~
-- Compling/running instructions
+- ~~Compling/running instructions~~
