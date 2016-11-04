@@ -3,24 +3,10 @@
         "fontSize": 8
     },
     "plugins": [
-        "mathjax"
+        "mathjax",
+        "autocover"
     ],
     "title": "ICPC Team Handbook",
     "author": "Collin Avidano | Vincent Insinga | Joshua Zenn",
-    "pluginsConfig": {
-      "autocover": {
-            "font": {
-                "size": 26,
-                "family": "Impact",
-                "color": "#FFF"
-            },
-            "size": {
-                "w": 1800,
-                "h": 2360
-            },
-            "background": {
-                "color": "#09F"
-            }
-        }
-    }
+    "pluginsConfig": {}
 }
